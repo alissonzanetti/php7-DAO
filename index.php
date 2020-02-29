@@ -40,9 +40,17 @@ echo $aluno;
 */
 
 //Updating user
+/*
 $usuario = new Usuario();
 $usuario->loadById(8);
 $usuario->udpate("professor", "professor");
+echo $usuario;
+*/
+
+//Deleting user
+$usuario = new Usuario();
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
 
 //instancia novo objeto
